@@ -2,12 +2,12 @@
 $getSentence = $_GET["sentence"];
 $getCensored = $_GET["censored"];
 
-echo $getSentence ."<br>";
-echo $getCensored ."<br>";
+// echo $getSentence ."<br>";
+// echo $getCensored ."<br>";
 $censoredSentence = str_replace("sushi", "*****", $getSentence);
 $sentenceLenght = strlen($getSentence);
-echo $sentenceLenght;
-echo $censoredSentence;
+// echo $sentenceLenght;
+// echo $censoredSentence;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ echo $censoredSentence;
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body class="bg-dark">
-    <div class="container text-danger text-center">
+    <div class="container mt-4 text-danger text-center">
         <h1> Full Sentence: <span class="text-white"> <?php echo $getSentence ?></span> </h1>
         <h2> Sentence lenght: <span class="text-white"> <?php echo $sentenceLenght?></span></h2>
         <h3> Censored Sentence: <span class="text-white"> <?php echo $censoredSentence ?></span> </h3>
