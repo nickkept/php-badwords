@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <form action="censoredword.php" method="GET">
-                    <legend class="fw-bold">Contatti [GET]</legend>
+                    <legend class="fw-bold">Bad Words [GET]</legend>
                     <div class="my-3">
                         <label for="" class="form-label fw-bold">Write a sentence:</label>
                         <input type="text" class="form-control" name="sentence">
